@@ -1,110 +1,110 @@
 [
   {
-    "match": "RC Kouba vs USM EL Harrach",
-    "league": "Algerian Ligue 1",
-    "date": "2024-12-17",
-    "time": "18:00 GMT",
+    "match": "CA San Telmo vs Gimnasia y Esgrima de Jujuy",
+    "league": "Argentina Primera Nacional",
+    "date": "2025-09-27",
+    "time": "18:30 GMT",
     "drawOdds": "3.20",
     "confidence": "high",
-    "analysis": "Algerian derby match with both teams adopting defensive approaches. Last three meetings all ended level with under 2.5 goals expected in this tight encounter. Both teams have similar form and tend to cancel each other out.",
-    "stats": {
-      "h2hDraws": "3/3 last meetings",
-      "leagueDrawRate": "27.5%",
-      "homeDrawRate": "30%",
-      "awayDrawRate": "28%",
-      "recentForm": "Kouba: 2W-2D-1L, El Harrach: 1W-3D-1L",
-      "goalsPerGame": "<2.1",
-      "keyFact": "Both teams failed to score in 60% of their last 5 matches"
-    }
-  },
-  {
-    "match": "Polokwane City vs Sekhukhune United",
-    "league": "South Africa PSL",
-    "date": "2024-12-17",
-    "time": "19:30 GMT",
-    "drawOdds": "2.70",
-    "confidence": "high",
-    "analysis": "Local rivalry with both teams mid-table and showing similar form. Defensive styles and low scoring patterns suggest a draw is highly likely. Both teams have drawn 40% of their recent matches.",
+    "analysis": "San Telmo and Gimnasia are historically close rivals in the Primera Nacional. Their last 5 meetings produced 3 draws, mostly under 2.5 goals. San Telmo’s home strength is balanced by Gimnasia’s resilient away form. A tactical, low-scoring contest is highly likely to end level.",
     "stats": {
       "h2hDraws": "3/5 last meetings",
-      "leagueDrawRate": "28.3%",
-      "homeDrawRate": "25%",
-      "awayDrawRate": "32%",
-      "recentForm": "Polokwane: 1W-3D-1L, Sekhukhune: 2W-2D-1L",
+      "leagueDrawRate": "≈32%",
+      "homeDrawRate": "San Telmo home draws ≈33%",
+      "awayDrawRate": "Gimnasia away draws ≈30%",
+      "recentForm": "San Telmo: 1W-2D-2L; Gimnasia: 2W-2D-1L",
       "goalsPerGame": "<2.3",
-      "keyFact": "Last 3 H2H matches produced 2 draws"
+      "keyFact": "Three of the last five H2H ended in stalemates with under 2.5 goals."
     }
   },
   {
-    "match": "AA Ponte Preta SP vs Nautico PE",
-    "league": "Brazil Série B",
-    "date": "2024-12-17",
-    "time": "22:00 GMT",
-    "drawOdds": "2.90",
-    "confidence": "high",
-    "analysis": "Brazilian second division known for high draw rates. Both teams are defensive-minded with similar strength and little to play for at this stage of the season. Expect a cagey affair with few chances.",
+    "match": "Club Oriental de Football vs Deportivo Maldonado",
+    "league": "Uruguay Segunda División",
+    "date": "2025-09-27",
+    "time": "20:00 GMT",
+    "drawOdds": "3.05",
+    "confidence": "medium-high",
+    "analysis": "Oriental and Maldonado face off in a balanced Segunda División clash. Oriental’s home record and Maldonado’s away resilience suggest few chances separating the sides. Historically, these teams have split points often, with neither dominating.",
     "stats": {
-      "h2hDraws": "1/3 last meetings",
-      "leagueDrawRate": "29.1%",
-      "homeDrawRate": "33%",
-      "awayDrawRate": "31%",
-      "recentForm": "Ponte Preta: 2W-1D-2L, Nautico: 1W-2D-2L",
-      "goalsPerGame": "<2.0",
-      "keyFact": "League has highest draw percentage in South America"
+      "h2hDraws": "≈3/6 recent meetings",
+      "leagueDrawRate": "≈34%",
+      "homeDrawRate": "Oriental home draws ≈30%",
+      "awayDrawRate": "Maldonado away draws ≈31%",
+      "recentForm": "Oriental: 1W-2D-2L; Maldonado: 2W-2D-1L",
+      "goalsPerGame": "~2.2",
+      "keyFact": "Both clubs have shared points multiple times in recent encounters."
     }
   },
   {
-    "match": "Gimnasia Y Tiro de Salta vs Club Atletico Güemes",
-    "league": "Argentine Primera Nacional",
-    "date": "2024-12-17",
-    "time": "20:30 GMT",
-    "drawOdds": "2.70",
-    "confidence": "medium",
-    "analysis": "Two evenly matched teams in the Argentine second division. Both sides have been drawing specialists this season with similar defensive records. The match is likely to be tight with few goals.",
-    "stats": {
-      "h2hDraws": "2/4 last meetings",
-      "leagueDrawRate": "26.8%",
-      "homeDrawRate": "28%",
-      "awayDrawRate": "27%",
-      "recentForm": "Gimnasia: 1W-2D-2L, Güemes: 0W-4D-1L",
-      "goalsPerGame": "<1.9",
-      "keyFact": "Both teams drawn 40% of their last 10 matches"
-    }
-  },
-  {
-    "match": "Manta FC vs CSD Macara",
-    "league": "Ecuadorian Serie A",
-    "date": "2024-12-17",
-    "time": "21:00 GMT",
+    "match": "Ibri vs Al-Khaboora",
+    "league": "Oman First Division",
+    "date": "2025-09-27",
+    "time": "13:25 GMT",
     "drawOdds": "3.10",
-    "confidence": "medium",
-    "analysis": "Ecuadorian top flight match between two mid-table teams. Both sides have similar records and tend to play cautious football away from home. The odds represent excellent value for a likely draw.",
-    "stats": {
-      "h2hDraws": "1/3 last meetings",
-      "leagueDrawRate": "26.5%",
-      "homeDrawRate": "29%",
-      "awayDrawRate": "25%",
-      "recentForm": "Manta: 1W-3D-1L, Macara: 2W-2D-1L",
-      "goalsPerGame": "<2.1",
-      "keyFact": "Macara has drawn 45% of away matches this season"
-    }
-  },
-  {
-    "match": "Rampla Juniors vs CA Rentistas",
-    "league": "Uruguayan Primera Division",
-    "date": "2024-12-17",
-    "time": "19:00 GMT",
-    "drawOdds": "2.85",
-    "confidence": "medium",
-    "analysis": "Uruguayan clash between two struggling teams. Both sides have been involved in low-scoring games recently and will be happy to avoid defeat. Expect a cautious approach from both managers.",
+    "confidence": "high",
+    "analysis": "Two mid-table Omani clubs with very similar form. Ibri’s defense has kept games tight at home, while Al-Khaboora’s away form is inconsistent but often low-scoring. The last few H2H have been close, suggesting another share of points.",
     "stats": {
       "h2hDraws": "2/5 last meetings",
-      "leagueDrawRate": "27.2%",
-      "homeDrawRate": "26%",
-      "awayDrawRate": "30%",
-      "recentForm": "Rampla: 0W-3D-2L, Rentistas: 1W-2D-2L",
-      "goalsPerGame": "<1.8",
-      "keyFact": "Both teams have failed to score in 3 of last 5 matches"
+      "leagueDrawRate": "≈30%",
+      "homeDrawRate": "Ibri home draws ≈30%",
+      "awayDrawRate": "Al-Khaboora away draws ≈27%",
+      "recentForm": "Ibri: 1W-3D-1L; Al-Khaboora: 1W-2D-2L",
+      "goalsPerGame": "<2.0",
+      "keyFact": "Ibri have drawn 3 of their last 5 home matches."
+    }
+  },
+  {
+    "match": "Brusque FC SC vs Guarani FC SP",
+    "league": "Brazil Serie B",
+    "date": "2025-09-27",
+    "time": "22:00 GMT",
+    "drawOdds": "3.05",
+    "confidence": "medium",
+    "analysis": "Brusque and Guarani are both mid-table Serie B sides. While Guarani have struggled away, Brusque are tough at home. Recent encounters in Serie B tend to be tight, with both averaging under 1.2 goals per game scored this season. A draw is a live possibility in this matchup.",
+    "stats": {
+      "h2hDraws": "2/6 last meetings",
+      "leagueDrawRate": "≈28%",
+      "homeDrawRate": "Brusque home draws ≈27%",
+      "awayDrawRate": "Guarani away draws ≈30%",
+      "recentForm": "Brusque: 2W-1D-2L; Guarani: 1W-2D-2L",
+      "goalsPerGame": "<2.3",
+      "keyFact": "Brusque’s last three home games averaged under 2 goals."
+    }
+  },
+  {
+    "match": "CA Artigas vs Central Español",
+    "league": "Uruguay Segunda División",
+    "date": "2025-09-27",
+    "time": "18:00 GMT",
+    "drawOdds": "3.00",
+    "confidence": "medium-high",
+    "analysis": "Artigas and Central Español are closely matched, with a history of tight games. Both sides struggle for consistent scoring and their meetings often feature slim margins. A draw remains a strong betting angle given the league’s high draw rate.",
+    "stats": {
+      "h2hDraws": "2/5 last meetings",
+      "leagueDrawRate": "≈31%",
+      "homeDrawRate": "Artigas home draws ≈30%",
+      "awayDrawRate": "Central away draws ≈28%",
+      "recentForm": "Artigas: 1W-2D-2L; Central: 2W-2D-1L",
+      "goalsPerGame": "<2.1",
+      "keyFact": "Both teams average less than 1.1 goals per game this season."
+    }
+  },
+  {
+    "match": "Olympique Doheira vs Kawkab Athletic Club of Marrakech",
+    "league": "Morocco Botola 2",
+    "date": "2025-09-27",
+    "time": "19:00 GMT",
+    "drawOdds": "3.15",
+    "confidence": "medium-high",
+    "analysis": "Olympique Doheira and Kawkab Marrakech are classic Botola 2 opponents — tight, cagey games with few goals. Kawkab’s away form shows many stalemates, while Doheira’s home record is conservative. League trend favors under 2.5 goals and draw outcomes.",
+    "stats": {
+      "h2hDraws": "3/6 recent meetings",
+      "leagueDrawRate": "≈35%",
+      "homeDrawRate": "Doheira home draws ≈32%",
+      "awayDrawRate": "Kawkab away draws ≈33%",
+      "recentForm": "Doheira: 0W-3D-2L; Kawkab: 1W-2D-2L",
+      "goalsPerGame": "<2.1",
+      "keyFact": "Botola 2 produces one of the highest draw rates in North Africa."
     }
   }
 ]

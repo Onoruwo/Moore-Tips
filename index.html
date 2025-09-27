@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Draw Analysis</title>
+    <style>
+        :root {
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #3b82f6;
+            --win: #10b981;
+            --loss: #ef4444;
+            --pending: #f59e0b;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: var(--dark-bg);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        /* Header Styles */
+        .header {
+            background: var(--card-bg);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 3px solid var(--accent);
+            margin-bottom: 2rem;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #f8fafc;
+        }
+        
+        /* Navigation */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background: #334155;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        
+        .nav-link {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            color: #94a3b8;
+            font-weight: bold;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: white;
+            background: #475569;
+            border-bottom: 3px solid var(--accent);
+        }
+        
+        /* Update Info */
+        .update-info {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #94a3b8;
+            background: #334155;
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent);
+        }
+        
+        /* Performance Stats */
+        .performance-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .stat-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Draw Cards */
+        .draws-container {
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #334155;
+            display: flex;
+            align-items: center;
+        }
+        
+        .draw-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        
+        .draw-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .match-info {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #f8fafc;
+        }
+
+        .section-title .match-count {
+            margin-left: 10px;
+        }
+        
+        .match-details {
+            color: #94a3b8;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .bet-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #334155;
+            border-radius: 5px;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .odds {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #f8fafc;
+        }
+        
+        .confidence {
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .high { background: var(--win); }
+        .medium { background: var(--pending); }
+        .low { background: var(--loss); }
+        
+        .analysis {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #334155;
+            border-radius: 5px;
+            line-height: 1.5;
+        }
+        
+        .analysis strong {
+            color: var(--accent);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .stat {
+            background: #475569;
+            padding: 0.7rem;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .result {
+            padding: 0.7rem;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 1rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .won { background: var(--win); }
+        .lost { background: var(--loss); }
+        .pending { background: var(--pending); }
+        
+        /* Top Pick Highlight */
+        .top-pick-highlight {
+            border: 2px solid var(--accent);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .top-pick-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: var(--accent);
+            color: white;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+            border-bottom-left-radius: 10px;
+        }
+        
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #94a3b8;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-left-color: var(--accent);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Page Content */
+        .page-content {
+            display: none;
+        }
+        
+        .page-content.active {
+            display: block;
+        }
+        
+        /* Appreciation Section */
+        .appreciation-section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .appreciation-section h3 {
+            margin-bottom: 1.5rem;
+            color: #f8fafc;
+        }
+        
+        .payment-info {
+            background: #334155;
+            padding: 1.5rem;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .payment-detail {
+            margin: 0.7rem 0;
+            padding: 0.7rem;
+            background: #475569;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            border-top: 1px solid #334155;
+            margin-top: 2rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .nav {
+                flex-direction: column;
+            }
+            
+            .nav-link {
+                text-align: center;
+                border-bottom: 1px solid #475569;
+                border-right: none;
+            }
+            
+            .performance-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .bet-details {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .match-count {
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>🎯 Professional Draw Analysis</h1>
+            <p>Daily Value Betting Insights • Multi-Match Support</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="#home" class="nav-link active" data-page="home">Home</a>
+            <a href="#top3" class="nav-link" data-page="top3">Top 3</a>
+            <a href="#toppick" class="nav-link" data-page="toppick">Top Pick</a>
+        </nav>
+
+        <!-- Last Updated Info -->
+        <div class="update-info">
+            <p>Last updated: <span id="lastUpdated">Loading...</span></p>
+        </div>
+
+        <!-- Home Page -->
+        <div id="home-page" class="page-content active">
+            <div class="performance-stats">
+                <div class="stat-card">
+                    <div class="stat-value">64%</div>
+                    <div class="stat-label">Win Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">+28.5%</div>
+                    <div class="stat-label">ROI</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">3W-1L</div>
+                    <div class="stat-label">Current Streak</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">47-26</div>
+                    <div class="stat-label">W-L Record</div>
+                </div>
+            </div>
+
+            <div class="draws-container">
+                <h2 class="section-title">📅 Today's Top Draw Predictions <span class="match-count" id="home-matchCount">Loading...</span></h2>
+                <div id="home-content">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Loading today's predictions...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top 3 Page -->
+        <div id="top3-page" class="page-content">
+            <div class="draws-container">
+                <h2 class="section-title">🥇 Top 3 Draw Predictions <span class="match-count" id="top3-matchCount">Loading...</span></h2>
+                <div id="top3-content">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Loading top 3 predictions...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Pick Page -->
+        <div id="toppick-page" class="page-content">
+            <div class="draws-container">
+                <h2 class="section-title">⭐ Today's Top Pick <span class="match-count" id="toppick-matchCount">Loading...</span></h2>
+                <div id="toppick-content">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Loading today's top pick...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="appreciation-section">
+            <h3>🤝 Support My Work</h3>
+            <p>If my analysis helps your betting decisions, consider supporting my work:</p>
+            
+            <div class="payment-info">
+                <div class="payment-detail">
+                    <span>Platform:</span>
+                    <strong>Opay</strong>
+                </div>
+                <div class="payment-detail">
+                    <span>Account Number:</span>
+                    <strong>7032597877</strong>
+                </div>
+                <div class="payment-detail">
+                    <span>Name:</span>
+                    <strong>Jimmy Onoruwo</strong>
+                </div>
+            </div>
+            
+            <p style="margin-top: 1rem; font-style: italic;">Thank you for your support! 🙏</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Professional Betting Analysis • Specializing in Draw Predictions & Value Betting</p>
+            <p>For professional inquiries: 07032597877</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to load matches data from JSON file
+        async function loadMatchesData() {
+            try {
+                // In production, you would fetch from matches.json
+                const response = await fetch('/matches.json');
+                const matchesData = await response.json();
+                return matchesData;
+            } catch (error) {
+                console.error('Error loading matches data:', error);
+                // Return empty array if file doesn't exist yet
+                return [];
+            }
+        }
+        
+        // Function to sort matches by priority (you can customize this logic)
+        function sortMatchesByPriority(matches) {
+            // Sort by confidence (high > medium > low) then by odds (higher odds first)
+            const confidenceOrder = { high: 3, medium: 2, low: 1 };
+            
+            return matches.sort((a, b) => {
+                // First by confidence
+                if (confidenceOrder[a.confidence] !== confidenceOrder[b.confidence]) {
+                    return confidenceOrder[b.confidence] - confidenceOrder[a.confidence];
+                }
+                // Then by odds (higher odds first)
+                return parseFloat(b.drawOdds) - parseFloat(a.drawOdds);
+            });
+        }
+        
+        // Function to display matches on a specific page
+        function displayMatches(matchesData, pageId) {
+            const contentElement = document.getElementById(`${pageId}-content`);
+            const matchCountElement = document.getElementById(`${pageId}-matchCount`);
+            const lastUpdated = document.getElementById('lastUpdated');
+            
+            // Sort matches by priority
+            const sortedMatches = sortMatchesByPriority(matchesData);
+            
+            let displayMatches = [];
+            let pageTitle = "";
+            
+            // Determine which matches to show based on page
+            switch(pageId) {
+                case 'home':
+                    displayMatches = sortedMatches; // Show all matches
+                    pageTitle = "Today's Top Draw Predictions";
+                    break;
+                case 'top3':
+                    displayMatches = sortedMatches.slice(0, 3); // Show only top 3
+                    pageTitle = "Top 3 Draw Predictions";
+                    break;
+                case 'toppick':
+                    displayMatches = sortedMatches.slice(0, 1); // Show only top pick
+                    pageTitle = "Today's Top Pick";
+                    break;
+            }
+            
+            // Update page title
+            const titleElement = document.querySelector(`#${pageId}-page .section-title`);
+            if (titleElement) {
+                titleElement.innerHTML = `${pageId === 'toppick' ? '⭐' : pageId === 'top3' ? '🥇' : '📅'} ${pageTitle} <span class="match-count">${displayMatches.length} match${displayMatches.length !== 1 ? 'es' : ''}</span>`;
+            }
+            
+            if (!Array.isArray(matchesData) || matchesData.length === 0) {
+                contentElement.innerHTML = `
+                    <div class="draw-card">
+                        <div class="match-info">No predictions available today</div>
+                        <div class="match-details">Check back tomorrow for new predictions</div>
+                        <div class="analysis">
+                            <strong>Note:</strong> 
+                            <p>There are no value draw predictions identified for today. Our algorithm only selects matches with statistically significant draw probabilities.</p>
+                        </div>
+                    </div>`;
+                matchCountElement.textContent = '0 matches';
+                lastUpdated.textContent = new Date().toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+                return;
+            }
+            
+            let html = '';
+            displayMatches.forEach((match, index) => {
+                // Add top pick highlight for the first match on top pick page
+                const isTopPick = pageId === 'toppick';
+                html += generateMatchHTML(match, index, isTopPick);
+            });
+            
+            contentElement.innerHTML = html;
+            matchCountElement.textContent = `${displayMatches.length} match${displayMatches.length !== 1 ? 'es' : ''}`;
+            lastUpdated.textContent = new Date().toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+        
+        // Function to generate HTML for a single match
+        function generateMatchHTML(match, index, isTopPick = false) {
+            // Handle missing fields gracefully
+            const time = match.time || 'TBD';
+            const date = match.date || '';
+            const dateTime = date ? `${date} • ${time}` : time;
+            
+            return `
+<div class="draw-card ${isTopPick ? 'top-pick-highlight' : ''}">
+    ${isTopPick ? '<div class="top-pick-badge">⭐ TOP PICK</div>' : ''}
+    <div class="match-info">${match.match}</div>
+    <div class="match-details">${match.league} • ${dateTime}</div>
+    
+    <div class="bet-details">
+        <span><strong>Draw</strong></span>
+        <span class="odds">@ ${match.drawOdds}</span>
+        <span class="confidence ${match.confidence}">${match.confidence.toUpperCase()} Confidence</span>
+    </div>
+    
+    <div class="analysis">
+        <strong>Analysis:</strong> ${match.analysis}
+    </div>
+    
+    <div class="stats-grid">
+        <div class="stat">H2H Draws: ${match.stats.h2hDraws}</div>
+        <div class="stat">League Draws: ${match.stats.leagueDrawRate}</div>
+        <div class="stat">Form: ${match.stats.recentForm}</div>
+        <div class="stat">${match.stats.keyFact}</div>
+    </div>
+    
+    <div class="result pending">⏳ Waiting for Result</div>
+</div>`;
+        }
+        
+        // Navigation functionality
+        function setupNavigation() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageContents = document.querySelectorAll('.page-content');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links and pages
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    pageContents.forEach(p => p.classList.remove('active'));
+                    
+                    // Add active class to clicked link and corresponding page
+                    this.classList.add('active');
+                    const pageId = this.getAttribute('data-page');
+                    document.getElementById(`${pageId}-page`).classList.add('active');
+                    
+                    // Load data for the selected page
+                    loadDataForPage(pageId);
+                });
+            });
+        }
+        
+        // Load appropriate data for each page
+        async function loadDataForPage(pageId) {
+            const matchesData = await loadMatchesData();
+            displayMatches(matchesData, pageId);
+        }
+        
+        // Initialize the page when it loads
+        document.addEventListener('DOMContentLoaded', function() {
+            setupNavigation();
+            loadDataForPage('home'); // Load home page by default
+        });
+    </script>
+</body>
+</html>

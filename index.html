@@ -473,7 +473,7 @@
         async function loadMatchesData() {
             try {
                 // In production, you would fetch from matches.json
-                const response = await fetch('/matches.json');
+                const response = await fetch('matches.json');
                 const matchesData = await response.json();
                 return matchesData;
             } catch (error) {
@@ -643,3 +643,4 @@
     </script>
 </body>
 </html>
+

@@ -1,110 +1,110 @@
 [
   {
-    "match": "CA San Telmo vs Gimnasia y Esgrima de Jujuy",
-    "league": "Argentina Primera Nacional",
-    "date": "2025-09-27",
-    "time": "18:30 GMT",
-    "drawOdds": "3.20",
-    "confidence": "high",
-    "analysis": "San Telmo and Gimnasia are historically close rivals in the Primera Nacional. Their last 5 meetings produced 3 draws, mostly under 2.5 goals. San Telmo’s home strength is balanced by Gimnasia’s resilient away form. A tactical, low-scoring contest is highly likely to end level.",
-    "stats": {
-      "h2hDraws": "3/5 last meetings",
-      "leagueDrawRate": "≈32%",
-      "homeDrawRate": "San Telmo home draws ≈33%",
-      "awayDrawRate": "Gimnasia away draws ≈30%",
-      "recentForm": "San Telmo: 1W-2D-2L; Gimnasia: 2W-2D-1L",
-      "goalsPerGame": "<2.3",
-      "keyFact": "Three of the last five H2H ended in stalemates with under 2.5 goals."
-    }
-  },
-  {
-    "match": "Club Oriental de Football vs Deportivo Maldonado",
-    "league": "Uruguay Segunda División",
-    "date": "2025-09-27",
-    "time": "20:00 GMT",
-    "drawOdds": "3.05",
-    "confidence": "medium-high",
-    "analysis": "Oriental and Maldonado face off in a balanced Segunda División clash. Oriental’s home record and Maldonado’s away resilience suggest few chances separating the sides. Historically, these teams have split points often, with neither dominating.",
-    "stats": {
-      "h2hDraws": "≈3/6 recent meetings",
-      "leagueDrawRate": "≈34%",
-      "homeDrawRate": "Oriental home draws ≈30%",
-      "awayDrawRate": "Maldonado away draws ≈31%",
-      "recentForm": "Oriental: 1W-2D-2L; Maldonado: 2W-2D-1L",
-      "goalsPerGame": "~2.2",
-      "keyFact": "Both clubs have shared points multiple times in recent encounters."
-    }
-  },
-  {
-    "match": "Ibri vs Al-Khaboora",
-    "league": "Oman First Division",
-    "date": "2025-09-27",
-    "time": "13:25 GMT",
+    "match": "Gimpo FC vs Seongnam Ilhwa",
+    "league": "South Korea K League 2",
+    "date": "2024-06-26",
+    "time": "10:30 GMT",
     "drawOdds": "3.10",
-    "confidence": "high",
-    "analysis": "Two mid-table Omani clubs with very similar form. Ibri’s defense has kept games tight at home, while Al-Khaboora’s away form is inconsistent but often low-scoring. The last few H2H have been close, suggesting another share of points.",
+    "confidence": "Very High",
+    "analysis": "The premier draw candidate on the list. Features two of the league's strongest teams in excellent form. Seongnam's 15-match unbeaten streak includes 7 draws, showing resilience but not always dominance. Gimpo's strong home record also features multiple draws. Both teams will be cautious not to break their positive runs, making a tactical stalemate highly probable.",
     "stats": {
-      "h2hDraws": "2/5 last meetings",
-      "leagueDrawRate": "≈30%",
-      "homeDrawRate": "Ibri home draws ≈30%",
-      "awayDrawRate": "Al-Khaboora away draws ≈27%",
-      "recentForm": "Ibri: 1W-3D-1L; Al-Khaboora: 1W-2D-2L",
-      "goalsPerGame": "<2.0",
-      "keyFact": "Ibri have drawn 3 of their last 5 home matches."
+      "h2hDraws": "1/1 meeting this season (1-1)",
+      "leagueDrawRate": "29%",
+      "homeDrawRate": "40% (Gimpo home draws)",
+      "awayDrawRate": "47% (Seongnam away draws)",
+      "recentForm": "Gimpo: 3W-2D-0L (home), Seongnam: 3W-2D-0L (away)",
+      "goalsPerGame": "2.1",
+      "keyFact": "Seongnam has drawn 7 of their 15 unbeaten matches; perfect 'draw specialist' profile"
     }
   },
   {
-    "match": "Brusque FC SC vs Guarani FC SP",
-    "league": "Brazil Serie B",
-    "date": "2025-09-27",
-    "time": "22:00 GMT",
-    "drawOdds": "3.05",
-    "confidence": "medium",
-    "analysis": "Brusque and Guarani are both mid-table Serie B sides. While Guarani have struggled away, Brusque are tough at home. Recent encounters in Serie B tend to be tight, with both averaging under 1.2 goals per game scored this season. A draw is a live possibility in this matchup.",
+    "match": "FK Ufa vs FC Chelyabinsk",
+    "league": "Russia FNL 2 - Group 4",
+    "date": "2024-06-26",
+    "time": "14:00 GMT",
+    "drawOdds": "3.25",
+    "confidence": "High",
+    "analysis": "Classic mid-table stalemate with minimal promotion/relegation implications. Both teams separated by only 3 points in the standings. Ufa solid at home but not dominant, Chelyabinsk average away. The lack of strong motivation for either side to risk losing points creates perfect conditions for a mutually acceptable draw.",
     "stats": {
-      "h2hDraws": "2/6 last meetings",
-      "leagueDrawRate": "≈28%",
-      "homeDrawRate": "Brusque home draws ≈27%",
-      "awayDrawRate": "Guarani away draws ≈30%",
-      "recentForm": "Brusque: 2W-1D-2L; Guarani: 1W-2D-2L",
-      "goalsPerGame": "<2.3",
-      "keyFact": "Brusque’s last three home games averaged under 2 goals."
+      "h2hDraws": "1/2 meetings this season",
+      "leagueDrawRate": "28%",
+      "homeDrawRate": "30% (Ufa home draws)",
+      "awayDrawRate": "20% (Chelyabinsk away draws)",
+      "recentForm": "Ufa: 2W-2D-1L, Chelyabinsk: 2W-1D-2L",
+      "goalsPerGame": "2.3",
+      "keyFact": "Both teams in nearly identical table positions with little to gain/lose"
     }
   },
   {
-    "match": "CA Artigas vs Central Español",
-    "league": "Uruguay Segunda División",
-    "date": "2025-09-27",
-    "time": "18:00 GMT",
+    "match": "Sevilla Atlético vs SD Tarazona",
+    "league": "Spain Primera RFEF - Group 2",
+    "date": "2024-06-30",
+    "time": "17:00 GMT",
     "drawOdds": "3.00",
-    "confidence": "medium-high",
-    "analysis": "Artigas and Central Español are closely matched, with a history of tight games. Both sides struggle for consistent scoring and their meetings often feature slim margins. A draw remains a strong betting angle given the league’s high draw rate.",
+    "confidence": "High",
+    "analysis": "Relegation six-pointer where fear of losing outweighs desire to win. Sevilla's B team desperately needs points but lacks quality, while Tarazona would gladly take an away point to maintain their safety buffer. Expect a cagey, defensive-minded match with both teams prioritizing not conceding.",
     "stats": {
-      "h2hDraws": "2/5 last meetings",
-      "leagueDrawRate": "≈31%",
-      "homeDrawRate": "Artigas home draws ≈30%",
-      "awayDrawRate": "Central away draws ≈28%",
-      "recentForm": "Artigas: 1W-2D-2L; Central: 2W-2D-1L",
-      "goalsPerGame": "<2.1",
-      "keyFact": "Both teams average less than 1.1 goals per game this season."
+      "h2hDraws": "First meeting",
+      "leagueDrawRate": "26%",
+      "homeDrawRate": "20% (Sevilla B home draws)",
+      "awayDrawRate": "33% (Tarazona away draws)",
+      "recentForm": "Sevilla B: 1W-1D-3L, Tarazona: 1W-2D-2L",
+      "goalsPerGame": "<2.0",
+      "keyFact": "Tarazona has drawn 33% of away matches; Sevilla B has worst home record in group"
     }
   },
   {
-    "match": "Olympique Doheira vs Kawkab Athletic Club of Marrakech",
-    "league": "Morocco Botola 2",
-    "date": "2025-09-27",
-    "time": "19:00 GMT",
-    "drawOdds": "3.15",
-    "confidence": "medium-high",
-    "analysis": "Olympique Doheira and Kawkab Marrakech are classic Botola 2 opponents — tight, cagey games with few goals. Kawkab’s away form shows many stalemates, while Doheira’s home record is conservative. League trend favors under 2.5 goals and draw outcomes.",
+    "match": "Matsumoto Yamaga FC vs Tochigi SC",
+    "league": "Japan J3 League",
+    "date": "2024-06-30",
+    "time": "09:00 GMT",
+    "drawOdds": "3.20",
+    "confidence": "Medium-High",
+    "analysis": "Matsumoto's extreme offensive weakness (league's lowest scorers) meets Tochigi's average attack. Matsumoto cannot score but can defend reasonably well. Tochigi lacks the firepower to dominate away. High probability of a 0-0 or 1-1 draw given the home side's inability to convert chances.",
     "stats": {
-      "h2hDraws": "3/6 recent meetings",
-      "leagueDrawRate": "≈35%",
-      "homeDrawRate": "Doheira home draws ≈32%",
-      "awayDrawRate": "Kawkab away draws ≈33%",
-      "recentForm": "Doheira: 0W-3D-2L; Kawkab: 1W-2D-2L",
-      "goalsPerGame": "<2.1",
-      "keyFact": "Botola 2 produces one of the highest draw rates in North Africa."
+      "h2hDraws": "2/5 last meetings",
+      "leagueDrawRate": "25%",
+      "homeDrawRate": "44% (Matsumoto home draws)",
+      "awayDrawRate": "25% (Tochigi away draws)",
+      "recentForm": "Matsumoto: 0W-4D-1L (home), Tochigi: 1W-2D-2L",
+      "goalsPerGame": "1.8",
+      "keyFact": "Matsumoto has drawn 4 of last 5 home matches; only 7 goals scored in 16 games"
+    }
+  },
+  {
+    "match": "Girona B vs Terrassa FC",
+    "league": "Spain Segunda Federación - Group 3",
+    "date": "2024-06-30",
+    "time": "16:00 GMT",
+    "drawOdds": "3.30",
+    "confidence": "Medium",
+    "analysis": "Motivation mismatch where desperate relegation-threatened Girona B faces mid-table Terrassa with little to play for. Girona's terrible form makes them untrustworthy, but Terrassa's poor away record (only 2 wins) suggests they may struggle to secure victory. B team unpredictability adds to draw potential.",
+    "stats": {
+      "h2hDraws": "First meeting",
+      "leagueDrawRate": "27%",
+      "homeDrawRate": "27% (Girona B home draws)",
+      "awayDrawRate": "40% (Terrassa away draws)",
+      "recentForm": "Girona B: 0W-0D-5L, Terrassa: 1W-2D-2L (away)",
+      "goalsPerGame": "2.4",
+      "keyFact": "Terrassa has drawn 6 of 15 away matches; Girona B on 5-game losing streak"
+    }
+  },
+  {
+    "match": "Taichung Futuro FC vs Taiwan Power Company",
+    "league": "Taiwan Premier League",
+    "date": "2024-06-30",
+    "time": "10:00 GMT",
+    "drawOdds": "3.75",
+    "confidence": "Medium-Low",
+    "analysis": "Top-of-the-table clash between the league's two best attacks. While typically such matches can be cagey, both teams have title ambitions and will likely go for victory. However, the quality balance between the sides makes a high-scoring draw (2-2, 3-3) more likely than a one-sided result.",
+    "stats": {
+      "h2hDraws": "1/2 meetings this season",
+      "leagueDrawRate": "22%",
+      "homeDrawRate": "13% (Taichung home draws)",
+      "awayDrawRate": "25% (Taipower away draws)",
+      "recentForm": "Taichung: 7W-1D-0L, Taipower: 6W-2D-0L",
+      "goalsPerGame": ">6.0 (combined)",
+      "keyFact": "Both teams undefeated; combined average of over 6 goals per game in their matches"
     }
   }
 ]

@@ -1,110 +1,110 @@
 [
   {
-    "match": "Gimpo FC vs Seongnam Ilhwa",
-    "league": "K League 2 (South Korea)",
-    "date": "2025-09-28",
-    "time": "09:00 GMT",
-    "drawOdds": "3.00",
+    "match": "SC Farense vs GD Chaves",
+    "league": "Portugal Liga Portugal",
+    "date": "2024-12-17",
+    "time": "19:30 GMT",
+    "drawOdds": "3.10",
     "confidence": "high",
-    "analysis": "This fixture has historically produced many stalemates. Both sides are mid-table with low-scoring tendencies, averaging under 2 goals per game. Seongnam are slightly stronger on paper but rarely dominate Gimpo, making a draw a value call.",
+    "analysis": "Portuguese top-flight match where both teams typically play cautious football. Farense at home tends to be organized defensively but struggles to score, while Chaves away often employs a defensive low-block strategy. Both teams have everything to lose and little to gain from taking excessive risks, making a tactical stalemate highly probable.",
     "stats": {
-      "h2hDraws": "5/8 last meetings",
+      "h2hDraws": "3/8 last meetings",
       "leagueDrawRate": "31%",
       "homeDrawRate": "35%",
-      "awayDrawRate": "30%",
-      "recentForm": "Gimpo: 1W-3D-1L, Seongnam: 2W-2D-1L",
+      "awayDrawRate": "33%",
+      "recentForm": "Farense: 1W-3D-1L, Chaves: 0W-4D-1L",
       "goalsPerGame": "<2.1",
-      "keyFact": "Five of their last eight meetings ended level"
+      "keyFact": "Chaves has drawn 4 of their last 5 away matches"
     }
   },
   {
-    "match": "Verspah Oita vs Criacao Shinjuku",
-    "league": "Japan JFL",
-    "date": "2025-09-28",
-    "time": "05:00 GMT",
-    "drawOdds": "3.10",
+    "match": "Racing Club Avellaneda vs CA Independiente",
+    "league": "Argentina Primera Division",
+    "date": "2024-12-17",
+    "time": "22:00 GMT",
+    "drawOdds": "2.95",
     "confidence": "high",
-    "analysis": "Both teams are well matched in the JFL midtable. Encounters are typically tactical with limited goal chances, producing a high draw frequency. Shinjuku are defensive away, Oita play cautiously at home.",
+    "analysis": "The Avellaneda derby is one of South America's most intense rivalries. Historical data shows these matches are often cagey affairs where neither team wants to lose. Both managers will prioritize defensive organization over attacking flair. The psychological pressure of the derby typically leads to conservative tactics and frequent draws.",
     "stats": {
-      "h2hDraws": "4/7 last meetings",
+      "h2hDraws": "4/10 last meetings",
       "leagueDrawRate": "29%",
       "homeDrawRate": "28%",
-      "awayDrawRate": "32%",
-      "recentForm": "Oita: 1W-2D-2L, Shinjuku: 1W-3D-1L",
-      "goalsPerGame": "<2.0",
-      "keyFact": "Both sides average fewer than 1 goal scored per game in recent matches"
+      "awayDrawRate": "30%",
+      "recentForm": "Racing: 2W-2D-1L, Independiente: 1W-3D-1L",
+      "goalsPerGame": "<1.9",
+      "keyFact": "Derby matches in Argentina have 34% draw rate historically"
     }
   },
   {
-    "match": "Taichung Futuro vs Taiwan Power Company",
-    "league": "Taiwan Premier League",
-    "date": "2025-09-28",
-    "time": "08:00 GMT",
-    "drawOdds": "3.05",
-    "confidence": "medium-high",
-    "analysis": "Taichung and Taipower are closely matched in strength. Their league produces a fair share of draws, and historically, this fixture has had several stalemates. Taipower are slightly stronger, but Futuro at home balances the contest.",
-    "stats": {
-      "h2hDraws": "6/17 last meetings",
-      "leagueDrawRate": "27%",
-      "homeDrawRate": "29%",
-      "awayDrawRate": "26%",
-      "recentForm": "Futuro: 2W-2D-1L, Taipower: 3W-1D-1L",
-      "goalsPerGame": "<2.3",
-      "keyFact": "Matches between these sides often end 1-1 or 0-0"
-    }
-  },
-  {
-    "match": "Girona B vs Terrassa FC",
-    "league": "Segunda Federación (Spain)",
-    "date": "2025-09-28",
-    "time": "15:00 GMT",
-    "drawOdds": "2.95",
-    "confidence": "medium",
-    "analysis": "Spanish lower league matches with reserve sides often end in draws due to compact defenses and rotation. Girona B and Terrassa are near neighbors in the table, with similar form, making a tight stalemate likely.",
-    "stats": {
-      "h2hDraws": "2/5 last meetings",
-      "leagueDrawRate": "30%",
-      "homeDrawRate": "31%",
-      "awayDrawRate": "27%",
-      "recentForm": "Girona B: 1W-2D-2L, Terrassa: 1W-2D-2L",
-      "goalsPerGame": "<2.1",
-      "keyFact": "Four of Girona B’s last six home games ended level"
-    }
-  },
-  {
-    "match": "Sevilla Atlético vs SD Tarazona",
-    "league": "Primera RFEF (Spain)",
-    "date": "2025-09-28",
+    "match": "Chippa United FC vs Stellenbosch FC",
+    "league": "South Africa PSL",
+    "date": "2024-12-17",
     "time": "17:00 GMT",
-    "drawOdds": "2.90",
-    "confidence": "medium",
-    "analysis": "Sevilla’s reserve team usually rotates players, which often produces tight contests against compact sides like Tarazona. Both teams have been prone to draws this season, with low-scoring patterns dominating their recent games.",
-    "stats": {
-      "h2hDraws": "2/4 last meetings",
-      "leagueDrawRate": "28%",
-      "homeDrawRate": "29%",
-      "awayDrawRate": "28%",
-      "recentForm": "Sevilla B: 1W-3D-1L, Tarazona: 2W-2D-1L",
-      "goalsPerGame": "<2.0",
-      "keyFact": "Sevilla Atlético have drawn 3 of their last 5 league games"
-    }
-  },
-  {
-    "match": "Matsumoto Yamaga vs Tochigi SC",
-    "league": "J3 League (Japan)",
-    "date": "2025-09-28",
-    "time": "06:00 GMT",
-    "drawOdds": "3.10",
-    "confidence": "medium",
-    "analysis": "This J3 clash is balanced; both teams have a history of low-scoring encounters. Yamaga’s home games and Tochigi’s away matches tend to be tight, increasing the draw likelihood.",
+    "drawOdds": "2.65",
+    "confidence": "high",
+    "analysis": "South African PSL is statistically one of Africa's lowest-scoring leagues. Stellenbosch employs a disciplined defensive structure away from home, while Chippa lacks consistent finishing quality. Both teams struggle to convert chances, and the match dynamic favors a midfield battle with few clear scoring opportunities.",
     "stats": {
       "h2hDraws": "2/6 last meetings",
-      "leagueDrawRate": "26%",
-      "homeDrawRate": "28%",
-      "awayDrawRate": "27%",
-      "recentForm": "Yamaga: 2W-1D-2L, Tochigi: 1W-2D-2L",
-      "goalsPerGame": "<2.1",
-      "keyFact": "Three of Tochigi’s last five away games ended in draws"
+      "leagueDrawRate": "33%",
+      "homeDrawRate": "32%",
+      "awayDrawRate": "34%",
+      "recentForm": "Chippa: 1W-2D-2L, Stellenbosch: 2W-2D-1L",
+      "goalsPerGame": "<1.8",
+      "keyFact": "Stellenbosch has drawn 40% of away matches this season"
+    }
+  },
+  {
+    "match": "Carabobo FC vs Deportivo La Guaira",
+    "league": "Venezuela Primera Division",
+    "date": "2024-12-17",
+    "time": "21:00 GMT",
+    "drawOdds": "2.65",
+    "confidence": "medium-high",
+    "analysis": "Venezuelan league shows remarkable parity between mid-table teams. Both clubs have similar quality and tend to cancel each other out. Carabobo's home advantage is neutralized by La Guaira's organized away tactics. The match features two defensively minded coaches who prioritize not losing over winning.",
+    "stats": {
+      "h2hDraws": "3/7 last meetings",
+      "leagueDrawRate": "30%",
+      "homeDrawRate": "29%",
+      "awayDrawRate": "31%",
+      "recentForm": "Carabobo: 1W-3D-1L, La Guaira: 2W-2D-1L",
+      "goalsPerGame": "<2.3",
+      "keyFact": "Both teams have drawn 3 of their last 5 matches"
+    }
+  },
+  {
+    "match": "Orense SC vs CS Emelec",
+    "league": "Ecuador Serie A",
+    "date": "2024-12-17",
+    "time": "23:30 GMT",
+    "drawOdds": "3.00",
+    "confidence": "medium-high",
+    "analysis": "Classic 'frustration' matchup where underdog Orense will defend deep against favored Emelec. Orense's game plan revolves around defensive organization and hitting on counter-attacks. Emelec struggles to break down packed defenses away from home. The tactical setup heavily favors a stalemate.",
+    "stats": {
+      "h2hDraws": "2/5 last meetings",
+      "leagueDrawRate": "28%",
+      "homeDrawRate": "27%",
+      "awayDrawRate": "29%",
+      "recentForm": "Orense: 1W-2D-2L, Emelec: 2W-2D-1L",
+      "goalsPerGame": "<2.4",
+      "keyFact": "Emelec has drawn 2 of their last 3 away matches"
+    }
+  },
+  {
+    "match": "Zanaco FC vs Kabwe Warriors",
+    "league": "Zambia Super League",
+    "date": "2024-12-17",
+    "time": "14:00 GMT",
+    "drawOdds": "2.20",
+    "confidence": "high",
+    "analysis": "Two traditional Zambian powerhouses with similar playing styles. Both teams rely on physicality and set-pieces rather than creative attacking play. The historical rivalry creates additional pressure, leading to cautious approaches. Low scoring draw is highly probable given both teams' offensive limitations.",
+    "stats": {
+      "h2hDraws": "3/6 last meetings",
+      "leagueDrawRate": "32%",
+      "homeDrawRate": "31%",
+      "awayDrawRate": "33%",
+      "recentForm": "Zanaco: 2W-2D-1L, Kabwe: 1W-3D-1L",
+      "goalsPerGame": "<1.9",
+      "keyFact": "Zanaco has drawn 4 of their last 6 home matches against Kabwe"
     }
   }
 ]
